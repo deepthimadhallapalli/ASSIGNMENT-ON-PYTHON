@@ -1,0 +1,16 @@
+def strings(s,n):
+    ans=""
+    for i in range(0,n):
+        k=0
+        for j in range(0,i):
+            if(s[i]==s[j]):
+                k=1
+                break
+        if(k==0):
+            ans=ans+s[i]
+
+
+    print(ans)
+s=input()
+n=len(s)
+strings(s,n)
