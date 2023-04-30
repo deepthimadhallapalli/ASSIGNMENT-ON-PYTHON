@@ -1,0 +1,29 @@
+print("The available books are:")
+print("1.Introduction to python programming:Rs 499.00")
+print("2.Python Libraries cookbook:Rs.855.00")
+print("3.Data science in python:Rs.645.00")
+while(True):
+    a=int(input("choose ur option(1,2,3):"))
+    b=int(input("how many books you want:"))
+    if a==1:
+        c=b*(499+59.88)
+        print("The total price of books including gst is :",c)
+        print("But the total cost including delivery charges is:",round(250+c))
+    elif a==2:
+        d=b*(855+102.6)
+        print("The total price of books including gst is :", d)
+        print("But the total cost including delivery charges is:",round(250+d))
+    elif a==3:
+        e=b*(645+77.4)
+        print("The total price of books including gst is :",e)
+        print("but the total cost including delivery charges is:",round(250+e))
+    else:
+        print("you entered an invalid option please select among 1,2,3")
+        continue
+    m=input("Do you want any other books(yes/no):")
+    p="yes"
+    if m==p:
+        continue
+    else:
+        break
+print("-----------THANK YOU-----------")
